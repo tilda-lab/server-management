@@ -1,5 +1,4 @@
-# 000 exercise
-lue ja tiivistä
+# 000 lue ja tiivistä
 
 https://github.com/AONCODES/linux-course/blob/main/h4.md
 
@@ -11,3 +10,7 @@ https://partanennn.github.io/linux-servers/practices/fifth-week.html
 
 - Partasen raportti käsitteli domainin hankintaa ja hän oli valinnut palveluntarjoaksi Namecheapin
 - Raportissa on myös ohjeet domainin osoittamisesta virtuaalipalvelimelle
+
+
+#001 Debianin asennus virtuaalikoneelle / debian-13.7.0-arm64-netinst.iso
+
