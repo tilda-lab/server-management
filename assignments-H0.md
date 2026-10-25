@@ -54,7 +54,7 @@ AONCODES. Kotitehtäväraportti. https://github.com/AONCODES/linux-course/blob/m
 
 Linuxize. Usermod command in Linux. Luettavissa: https://linuxize.com/post/usermod-command-in-linux/ Luettu: 25.10.2026
 
-Luettavissa: https://linuxize.com/post/how-to-setup-a-firewall-with-ufw-on-debian-10/ Luettu: 25.10.2026
+Linuxize. How to Set Up a Firewall with UFW on Debian 10. Luettavissa: https://linuxize.com/post/how-to-setup-a-firewall-with-ufw-on-debian-10/ Luettu: 25.10.2026
 
 #
 
