@@ -50,7 +50,7 @@ Luotu ssh-avain onnistuneesti komennolla `ssh-keygen -t ed25519 -C "debian-upclo
 
 SSH Academy. How to Use ssh-keygen to Generate a New SSH Key? Luettavissa: https://www.ssh.com/academy/ssh/keygen Luettu: 25.10.2026
 
-https://github.com/AONCODES/linux-course/blob/main/h4.md Luettu: 25.10.2026
+AONCODES. Kotitehtäväraportti. https://github.com/AONCODES/linux-course/blob/main/h4.md Luettu: 25.10.2026
 
 Linuxize. Usermod command in Linux. Luettavissa: https://linuxize.com/post/usermod-command-in-linux/ Luettu: 25.10.2026
 
