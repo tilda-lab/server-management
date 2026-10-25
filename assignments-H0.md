@@ -17,7 +17,7 @@ https://partanennn.github.io/linux-servers/practices/fifth-week.html
 
 ### a) Debianin asennus virtuaalikoneelle 
 
-2026-10-25 / asennuksen aloitusaika 15:24 / MacBook Pro (Apple M3 Pro) / macOS Tahoe version 26.6.1
+2026-10-25 15:24 / MacBook Pro (Apple M3 Pro) / macOS Tahoe version 26.6.1
 
 #
 
