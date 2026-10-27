@@ -43,6 +43,19 @@ Vuokrasin virtuaalipalvelimen UpCloudilta. Palveluntarjoajan valintaan vaikuttiv
 
 Luotu ssh-avain onnistuneesti komennolla `ssh-keygen -t ed25519 -C "debian-upcloud`
 
+2026-10-25 17:55 
+
+Virtuaalipalvelimen käyttöönotto ja konfigurointi.
+
+Kirjauduttu onnistuneesti virtuaalipalvelimelle Debianin terminaalista komennolla `ssh root@[ip-osoite]`
+
+#
+
+### d) Weppipalvelin. 
+
+Tavoite asentaa web-palvelin, joka mahdollistaa verkkosivujen tarjoamisen selaimelle. Web-palvelinohjelmistoksi valitsin Nginxin. Ennen asennusta päivitin paketinhallinnan komennolla `sudo apt update` Tämän jälkeen asensin Nginxin `sudo apt install nginx`Asennuksen jälkeen toiminto tarkistetaan komennolla `systemctl status nginx`
+
+<img width="2424" height="618" alt="nginx" src="https://github.com/user-attachments/assets/c42bfb9d-65c0-40d4-a08b-8530b190ba2a" />
 
 #
 
