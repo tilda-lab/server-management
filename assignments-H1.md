@@ -33,7 +33,16 @@ Tarkistin SSH yhteyden toimivuuden `systemctl status ssh` Tilaksi ilmoitettiin a
 
 Lopuksi testasin SSH-yhteyden muodostamisen komennolla `ssh localhost`
 
-<img width="1682" height="674" alt="debian" src="https://github.com/user-attachments/assets/7f398fd8-b0e5-41dd-82ca-14d1a6c4d461" />
+<img width="1682" height="674" alt="debiansshpalvelin" src="https://github.com/user-attachments/assets/e0c33424-d0d5-4ecf-8c90-44761f73f0ab" />
 
 
+#
+
+### c) Pubkey. Kirjautumisen automatisointi.
+
+2026-11-03 21:16 / MacBook Pro (Apple M3 Pro) / macOS Tahoe version 26.6.1
+
+SSH-avainpari luodaan komennolla `ssh-keygen` käyttäen ed25519-algoritmia. Kopioin julkisen avaimen paikalliselle SSH-palvelimelle komennolla `ssh-copy-id tilda@localhost` Tämän jälkeen testasin kirjautumista komennolla `ssh tilda@localhost` Tämä toimi ongelmitta ja kirjautuminen ilman salasanaa onnistui.
+
+<img width="1576" height="802" alt="debiansshpubkey" src="https://github.com/user-attachments/assets/2e8460b5-66cd-4927-beb8-c060ec3218c1" />
 
