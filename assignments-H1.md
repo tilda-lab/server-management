@@ -46,3 +46,8 @@ SSH-avainpari luodaan komennolla `ssh-keygen` käyttäen ed25519-algoritmia. Kop
 
 <img width="1576" height="802" alt="debiansshpubkey" src="https://github.com/user-attachments/assets/2e8460b5-66cd-4927-beb8-c060ec3218c1" />
 
+#
+
+### Lähteet
+
+
