@@ -48,6 +48,15 @@ SSH-avainpari luodaan komennolla `ssh-keygen` käyttäen ed25519-algoritmia. Kop
 
 #
 
+### d) Hei Ansible.
+
+2026-11-03 21:47 / MacBook Pro (Apple M3 Pro) / macOS Tahoe version 26.6.1
+
+
+
+
+
+
 ### Lähteet
 
 Tero Karvinen. SSH public key - Login without password. Luettavissa: https://terokarvinen.com/ssh-public-key-login-without-password/ Luettu: 3.11.2026
