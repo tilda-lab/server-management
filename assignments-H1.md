@@ -52,10 +52,23 @@ SSH-avainpari luodaan komennolla `ssh-keygen` käyttäen ed25519-algoritmia. Kop
 
 2026-11-03 21:47 / MacBook Pro (Apple M3 Pro) / macOS Tahoe version 26.6.1
 
+<img width="1662" height="694" alt="ansible-harjoitus" src="https://github.com/user-attachments/assets/1c875a7f-19c5-4724-bb5e-352b5c2583b8" />
+
+#
+
+<img width="1728" height="460" alt="python-warning" src="https://github.com/user-attachments/assets/08ccad6a-28fe-43ee-807a-a1af817bbe73" />
+
+Pythoniin liittyvän varoituksen poistaminen opettajan ohjeilla (Tero Karvinen, 2026).
+
+```yaml
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
+```
+
+<img width="1810" height="692" alt="python-warning-korjattu" src="https://github.com/user-attachments/assets/50e51849-8a7d-4b28-bebe-215f52ba5b7c" />
 
 
-
-
+#
 
 ### Lähteet
 
@@ -63,5 +76,7 @@ Tero Karvinen. SSH public key - Login without password. Luettavissa: https://ter
 
 SSH Academy. How to Use ssh-keygen to Generate a New SSH Key? Luettavissa: 
 https://www.ssh.com/academy/ssh/keygen Luettu: 3.11.2026
+
+Red Hat. What is YAML? Luettavissa: https://www.redhat.com/en/topics/automation/what-is-yaml Luettu: 3.11.2026
 
 
