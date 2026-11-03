@@ -19,7 +19,7 @@ https://terokarvinen.com/hello-ansible/
 
 ### a) Debian 13
 
-Debianin asennus raportoitu aiemmessa tehtävässä.
+Debianin asennus raportoitu aiemmessa tehtävässä. https://github.com/tilda-lab/server-management/blob/main/assignments-H0.md
 
 #
 
