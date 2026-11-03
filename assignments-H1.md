@@ -14,4 +14,24 @@ https://terokarvinen.com/hello-ansible/
 -  Ansiblella voidaan hallita ja konfiguroida useita palvelimia yhtäaikaa.
 -  Ansible hyödyntää SSH yhteyttä ja erillistä ohjelmaa ei tarvitse ladata ohjattaville koneille tai palvelimille. SSH-daemoni ja Python riittävät.
 -  Asetukset määritellään YAML-muotoisissa tiedostoissa, joita kutsutaan playbookeiksi.
-   
+
+#
+
+### a) Debian 13
+
+Debianin asennus raportoitu aiemmessa tehtävässä.
+
+#
+
+### b) Sshecrets. SSH-palvelimen asennus ja testaus
+
+Asensin Debian-virtuaalikoneelle OpenSSh Server ohjelmiston komennolla `sudo apt install openssh-server` ja käynnistin palvelun `sudo systemctl start ssh`
+
+Tarkistin SSH yhteyden toimivuuden `systemctl status ssh` Tilaksi ilmoitettiin active. 
+
+Lopuksi testasin SSH-yhteyden muodostamisen komennolla `ssh localhost`
+
+<img width="1682" height="674" alt="debian" src="https://github.com/user-attachments/assets/7f398fd8-b0e5-41dd-82ca-14d1a6c4d461" />
+
+
+
