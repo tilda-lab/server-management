@@ -25,6 +25,8 @@ Debianin asennus raportoitu aiemmessa tehtävässä.
 
 ### b) Sshecrets. SSH-palvelimen asennus ja testaus
 
+2026-11-03 19:43 / MacBook Pro (Apple M3 Pro) / macOS Tahoe version 26.6.1
+
 Asensin Debian-virtuaalikoneelle OpenSSh Server ohjelmiston komennolla `sudo apt install openssh-server` ja käynnistin palvelun `sudo systemctl start ssh`
 
 Tarkistin SSH yhteyden toimivuuden `systemctl status ssh` Tilaksi ilmoitettiin active. 
