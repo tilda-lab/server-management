@@ -50,4 +50,9 @@ SSH-avainpari luodaan komennolla `ssh-keygen` käyttäen ed25519-algoritmia. Kop
 
 ### Lähteet
 
+Tero Karvinen. SSH public key - Login without password. Luettavissa: https://terokarvinen.com/ssh-public-key-login-without-password/ Luettu: 3.11.2026
+
+SSH Academy. How to Use ssh-keygen to Generate a New SSH Key? Luettavissa: 
+https://www.ssh.com/academy/ssh/keygen Luettu: 3.11.2026
+
 
