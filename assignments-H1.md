@@ -52,6 +52,10 @@ SSH-avainpari luodaan komennolla `ssh-keygen` käyttäen ed25519-algoritmia. Kop
 
 2026-11-03 21:47 / MacBook Pro (Apple M3 Pro) / macOS Tahoe version 26.6.1
 
+Ansible on avoimen lähdekoodin automaatiotyökalu, jolla voidaan hallita ja konfiguroida palvelimia sekä suorittaa komentoja etänä. Yhteyden muodostamiseen käytetään SSH-protokollaa. Ansible käyttää YAML-muotoisia playbook-tiedostoja, joihin määritellään suoritettavat tehtävät. Lisäksi kohdekoneet listataan inventory-tiedostoon.
+
+Harjoituksessa asensin Ansiblen Debianiin ja kokeilin sen toimintaa SSH-yhteyden kautta paikalliseen koneeseen (localhost).
+
 <img width="1662" height="694" alt="ansible-harjoitus" src="https://github.com/user-attachments/assets/1c875a7f-19c5-4724-bb5e-352b5c2583b8" />
 
 #
