@@ -58,7 +58,7 @@ SSH-avainpari luodaan komennolla `ssh-keygen` käyttäen ed25519-algoritmia. Kop
 
 <img width="1728" height="460" alt="python-warning" src="https://github.com/user-attachments/assets/08ccad6a-28fe-43ee-807a-a1af817bbe73" />
 
-Pythoniin liittyvän varoituksen poistaminen opettajan ohjeilla (Tero Karvinen, 2026).
+Pythoniin liittyvän varoituksen poistaminen opettajan ohjeilla (Karvinen, 2026).
 
 ```yaml
 [all:vars]
@@ -73,6 +73,8 @@ ansible_python_interpreter=/usr/bin/python3
 ### Lähteet
 
 Tero Karvinen. SSH public key - Login without password. Luettavissa: https://terokarvinen.com/ssh-public-key-login-without-password/ Luettu: 3.11.2026
+
+Tero Karvinen. Hello Ansible. Luettavissa: https://terokarvinen.com/hello-ansible/ Luettu: 3.11.2026
 
 SSH Academy. How to Use ssh-keygen to Generate a New SSH Key? Luettavissa: 
 https://www.ssh.com/academy/ssh/keygen Luettu: 3.11.2026
