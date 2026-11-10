@@ -9,3 +9,7 @@ Sudo without password: https://terokarvinen.com/passwordless-sudo/
 
 Passwordless Sudo with Ansible: https://terokarvinen.com/passwordless-sudo-with-ansible/
 - Ansiblella komentojen suorittaminen kohdepalvelimella ilman sudon jatkuvaa salasanan kysymistä
+
+#
+
+a) Sudoless. 
