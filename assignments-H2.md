@@ -41,6 +41,7 @@ Asennettu kaksi ohjelmistopakettia, curl ja tree.
 
 d) File. Tiedostojen käyttöoikeudet ja hallinnointi.
 
+Tiedostolle määritettiin omistajaksi ansible ja ryhmäksi ansibe. Käyttöoikuedet 0640 (-rw-r-----) Omistaja voi siis lukea ja muokata tiedosta, ryhmän jäsenillä lukuoikeus ja muilla ei ole tiedostoon mitään oikeuksia
 
 #
 
