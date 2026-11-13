@@ -145,7 +145,7 @@ Loin uuden roolin files ja päivitin sen site.yml -tiedostoon. Testasin ja sain 
 
 ```bash
 käyttöoikeudet
-0600 / -rw------ / omistaja (owner) saa lukea (r)  ja muokata tiedostoja (w)
+0600 / -rw------ / omistaja (owner) saa lukea (r = read) ja muokata tiedostoja (w = write)
 ```
 
 
