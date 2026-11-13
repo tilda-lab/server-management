@@ -104,7 +104,29 @@ Toinen virheilmoitus liittyi tiedostopolun virheellisen syntaksiin.  " __ etc/su
 
 <img width="1656" height="290" alt="2026-11-13 at 9 59 44" src="https://github.com/user-attachments/assets/354c3e9f-a4ca-46ec-a8cd-a58b0cf5fb4e" />
 
+#
 
+c) Package. 
+
+`09:59`
+
+Määrittelin Ansiblella kahden paketin asennukset päivittämällä site.yml -tiedoston ja luomalla uuden roolin paketeille.
+
+<img width="1656" height="290" alt="2026-11-13 at 9 59 44" src="https://github.com/user-attachments/assets/4f22b3f5-cd88-41a0-82cd-cab1907c3e3f" />
+
+<img width="1678" height="554" alt="2026-11-13 at 10 01 57" src="https://github.com/user-attachments/assets/c7c669b5-64d7-49ef-9df3-b68fd5578527" />
+
+Paketit testattu 
+
+```bash
+curl -V
+htop
+```
+
+<img width="1670" height="348" alt="2026-11-13 at 10 01 55" src="https://github.com/user-attachments/assets/a4b3e0e6-32c3-45ed-8e8c-46f533d2c7d5" />
+
+
+<img width="1652" height="308" alt="2026-11-13 at 10 00 36" src="https://github.com/user-attachments/assets/9c4d3ed9-aee5-4e38-b638-5ab89c76def5" />
 
 
 
