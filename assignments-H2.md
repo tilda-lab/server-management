@@ -143,6 +143,11 @@ Loin uuden roolin files ja päivitin sen site.yml -tiedostoon. Testasin ja sain 
 
 <img width="1838" height="1376" alt="2026-11-13 at 12 21 28" src="https://github.com/user-attachments/assets/2875e930-da90-406a-a55b-21435c3a711d" />
 
+```bash
+käyttöoikeudet
+0600 / -rw------ / omistaja (owner) saa lukea (r)  ja muokata tiedostoja (w)
+```
+
 
 #
 
