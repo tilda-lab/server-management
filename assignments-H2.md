@@ -147,6 +147,13 @@ Loin uuden roolin files ja päivitin sen site.yml -tiedostoon. Testasin ja sain 
 käyttöoikeudet
 0600 / -rw------ / omistaja (owner) saa lukea (r = read) ja muokata tiedostoja (w = write)
 ```
+#
+
+`12:49` main.yml -tiedostosta puuttui `ansible.builtin.copy` Tiedoston kohdepolku edelleen virheellinen.
+
+<img width="1630" height="358" alt="2026-11-13 at 12 49 23" src="https://github.com/user-attachments/assets/25136c09-0790-48c0-a476-87a14d4b4053" />
+
+<img width="1644" height="698" alt="2026-11-13 at 12 53 24" src="https://github.com/user-attachments/assets/9a3af8ac-068b-4404-9a0c-7e60d1605291" />
 
 
 #
