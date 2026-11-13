@@ -52,7 +52,6 @@ a & b) Sudoless & Antero.
 
 Loin uuden käyttäjän nimellä antero ja automatisoin kirjautumisen ssh-avaimella.
 
-#
 `08:56`
 
 ```bash
