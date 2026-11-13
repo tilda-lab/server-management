@@ -62,7 +62,14 @@ sudo adducer antero sudoless # lisää käyttäjänantero sudoles-ryhmään
 ```
 
  <img width="1393" height="612" alt="2026-11-13 at 8 56 39" src="https://github.com/user-attachments/assets/297ce8f3-1699-4575-9f6e-2431c7a1384d" /> 
- 
+
+#
+Sudoers-asetuksien määrittely visudo-editorilla. Tiedostoon kirjasin sudoless-oikeudet kaikille käyttäjille = ALL ja lisäksi NOPASSWD määritteli ettei salasanaa kysytä.
+
+`sudo visudo /etc/sudoers.d/sudoless`
+
+`%sudoless ALL = (ALL) NOPASSWD: ALL`
+
 #
 `09:00`
 
@@ -72,5 +79,14 @@ sudo -k # mitätöi aiemman tallennetun sudo-tunnistuksen
 sudo echo "Hello World" # tulostaa tekstin komentoriville
 ```
 <img width="1608" height="650" alt="2026-11-13 at 9 02 04" src="https://github.com/user-attachments/assets/e67f869b-4c90-4226-9744-8f116bcc8e7d" />
+
+#
+`09:23`
+
+
+`ansible-playbook site.yml`
+
+
+
 
 
