@@ -116,7 +116,8 @@ Määrittelin Ansiblella kahden paketin asennukset päivittämällä site.yml -t
 
 <img width="1678" height="554" alt="2026-11-13 at 10 01 57" src="https://github.com/user-attachments/assets/c7c669b5-64d7-49ef-9df3-b68fd5578527" />
 
-Paketit testattu 
+
+Paketit testattu toimiviksi.
 
 ```bash
 curl -V
