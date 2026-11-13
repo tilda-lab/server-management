@@ -1,6 +1,6 @@
 #
 
-### X) Lue ja tiivistä
+X) Lue ja tiivistä
 
 Sudo without password: https://terokarvinen.com/passwordless-sudo/
 - Uuden käyttäjän ja ryhmien luonti.
@@ -40,7 +40,7 @@ Tiedostolle määritettiin omistajaksi ansible ja ryhmäksi ansibe. Käyttöoiku
 
 e) Jotain muuta. 
 
-##### Lähteet: 
+Lähteet: 
 
 Passwordless Sudo with Ansible: https://terokarvinen.com/passwordless-sudo-with-ansible/
 Sudo without password: https://terokarvinen.com/passwordless-sudo/
@@ -135,6 +135,11 @@ htop
 <img width="1652" height="308" alt="2026-11-13 at 10 00 36" src="https://github.com/user-attachments/assets/9c4d3ed9-aee5-4e38-b638-5ab89c76def5" />
 
 
+#
 
+Lähteet: 
+
+Passwordless Sudo with Ansible: https://terokarvinen.com/passwordless-sudo-with-ansible/
+Sudo without password: https://terokarvinen.com/passwordless-sudo/
 
 
