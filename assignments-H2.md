@@ -46,7 +46,7 @@ Passwordless Sudo with Ansible: https://terokarvinen.com/passwordless-sudo-with-
 Sudo without password: https://terokarvinen.com/passwordless-sudo/
 
 #
-edit. 2026-11-13 start 8:30 / MacBook Pro (Apple M3 Pro) / macOS Tahoe version 26.6.1 / uusinta H2-osion tehtävistä.
+edit. 2026-11-13 start 8:30 / MacBook Pro (Apple M3 Pro) / macOS Tahoe version 26.6.1 
 
 a & b) Sudoless & Antero.
 
