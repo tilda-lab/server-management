@@ -48,7 +48,7 @@ Sudo without password: https://terokarvinen.com/passwordless-sudo/
 #
 edit. 2026-11-13 start 8:30 / MacBook Pro (Apple M3 Pro) / macOS Tahoe version 26.6.1 / uusinta H2-osion tehtävistä.
 
-a) Sudoless.
+a & b) Sudoless & Antero.
 
 Loin uuden käyttäjän nimellä antero ja automatisoin kirjautumisen ssh-avaimella.
 
@@ -94,8 +94,17 @@ Ensimmäisenä korjasin puuttuvan salasanan. Komennosta `ansible-playbook site.y
 
 <img width="1682" height="1206" alt="2026-11-13 at 9 30 30" src="https://github.com/user-attachments/assets/17e135c2-9db1-453b-8f52-b20900bfbc38" />
 
+Toinen virheilmoitus liittyi tiedostopolun virheellisen syntaksiin.  " __ etc/sudoers.d/sudoless" Korjasin puuttuvan kauttaviivan.
 
-Ensimmäinen liittyi tiedostopolun virheelliseen syntaksiin.  " __ etc/sudoers.d/sudoless" Korjasin puuttuvan kauttaviivan.
+
+`09:40` Ongelmat ratkaistu ja playbook toimi.
+
+<img width="1692" height="1200" alt="2026-11-13 at 9 40 05" src="https://github.com/user-attachments/assets/1554d37f-8585-45a2-94f7-0fd42ca037ee" />
+
+
+<img width="1656" height="290" alt="2026-11-13 at 9 59 44" src="https://github.com/user-attachments/assets/354c3e9f-a4ca-46ec-a8cd-a58b0cf5fb4e" />
+
+
 
 
 
