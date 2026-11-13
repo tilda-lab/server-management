@@ -16,7 +16,7 @@ a) Sudoless.
 
 2026-11-10 19:24 / MacBook Pro (Apple M3 Pro) / macOS Tahoe version 26.6.1
 
-Loin uuden käyttäjän ansible ja automatisoin kirjautumisen kohdepalvelimelle ssh-avaimella. Tämä mahdollisti komentojen suorittamisen sudo-oikeuksilla ilman jatkuvia salasanan tarkistuksia.
+Loin uuden käyttäjän ansiblella ja automatisoin kirjautumisen kohdepalvelimelle ssh-avaimella. Tämä mahdollisti komentojen suorittamisen sudo-oikeuksilla ilman jatkuvia salasanan tarkistuksia.
 
 Sudo-oikeudet määritettiin NOPASSWD asetuksilla, 
 
@@ -46,24 +46,31 @@ Passwordless Sudo with Ansible: https://terokarvinen.com/passwordless-sudo-with-
 Sudo without password: https://terokarvinen.com/passwordless-sudo/
 
 #
-edit. 2026-11-13 start 8:30 / MacBook Pro (Apple M3 Pro) / macOS Tahoe version 26.6.1
-Uusinta H2-osion tehtävistä.
+edit. 2026-11-13 start 8:30 / MacBook Pro (Apple M3 Pro) / macOS Tahoe version 26.6.1 / uusinta H2-osion tehtävistä.
 
 a) Sudoless.
 
 Loin uuden käyttäjän nimellä antero ja automatisoin kirjautumisen ssh-avaimella.
 
-bash
-sudo adducer antero
-sudo grouped sudoless
-sudo adducer antero sudoless
-
-
 #
-[8:56]
+`08:56`
+
+```bash
+sudo adduser antero # lisää uuden käyttäjän
+sudo groupadd sudoless # luo ryhmän
+sudo adducer antero sudoless # lisää käyttäjänantero sudoles-ryhmään
+```
+
  <img width="1393" height="612" alt="2026-11-13 at 8 56 39" src="https://github.com/user-attachments/assets/297ce8f3-1699-4575-9f6e-2431c7a1384d" /> 
+ 
 #
-[8:59]
-<img width="1094" height="122" alt="2026-11-13 at 8 59 29" src="https://github.com/user-attachments/assets/94da2eac-ed99-4658-88f5-1e66c367d735" />
+`09:00`
+
+```bash
+ssh antero@localhost # muodostaa SSH-yhteyden
+sudo -k # mitätöi aiemman tallennetun sudo-tunnistuksen
+sudo echo "Hello World" # tulostaa tekstin komentoriville
+```
+<img width="1608" height="650" alt="2026-11-13 at 9 02 04" src="https://github.com/user-attachments/assets/e67f869b-4c90-4226-9744-8f116bcc8e7d" />
 
 
