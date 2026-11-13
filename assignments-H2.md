@@ -133,6 +133,16 @@ htop
 
 <img width="1652" height="308" alt="2026-11-13 at 10 00 36" src="https://github.com/user-attachments/assets/9c4d3ed9-aee5-4e38-b638-5ab89c76def5" />
 
+#
+
+d) File. 
+
+`12:21`
+
+Loin uuden roolin files ja päivitin sen site.yml -tiedostoon. Testasin ja sain virheilmoituksen. 
+
+<img width="1838" height="1376" alt="2026-11-13 at 12 21 28" src="https://github.com/user-attachments/assets/2875e930-da90-406a-a55b-21435c3a711d" />
+
 
 #
 
