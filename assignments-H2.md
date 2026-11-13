@@ -83,8 +83,19 @@ sudo echo "Hello World" # tulostaa tekstin komentoriville
 #
 `09:23`
 
+Testasin `ansible-playbook site.yml` ja sain useita virheilmoituksia. 
 
-`ansible-playbook site.yml`
+<img width="1574" height="998" alt="2026-11-13 at 9 26 10" src="https://github.com/user-attachments/assets/e98bd682-1c8c-4b07-bb57-b68c4cb02ecb" />
+
+Ensimmäisenä korjasin puuttuvan salasanan. Komennosta `ansible-playbook site.yml` puuttui parametri -K eli ask-become-pass. Parametrin avulla Ansible kysyy sudo-salasanan.
+
+`ansible-playbook site.yml -K`
+
+
+<img width="1682" height="1206" alt="2026-11-13 at 9 30 30" src="https://github.com/user-attachments/assets/17e135c2-9db1-453b-8f52-b20900bfbc38" />
+
+
+Ensimmäinen liittyi tiedostopolun virheelliseen syntaksiin.  " __ etc/sudoers.d/sudoless" Korjasin puuttuvan kauttaviivan.
 
 
 
