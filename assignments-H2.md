@@ -112,12 +112,17 @@ c) Package.
 
 Määrittelin Ansiblella kahden paketin asennukset päivittämällä site.yml -tiedoston ja luomalla uuden roolin paketeille.
 
+
+
 <img width="1656" height="290" alt="2026-11-13 at 9 59 44" src="https://github.com/user-attachments/assets/4f22b3f5-cd88-41a0-82cd-cab1907c3e3f" />
 
 <img width="1678" height="554" alt="2026-11-13 at 10 01 57" src="https://github.com/user-attachments/assets/c7c669b5-64d7-49ef-9df3-b68fd5578527" />
 
+<img width="1590" height="270" alt="2026-11-13 at 11 56 02" src="https://github.com/user-attachments/assets/244fa627-2cd2-4aad-8354-3fb3980ffc5f" />
 
-Paketit testattu toimiviksi.
+#
+
+`10:01` Paketit testattu toimiviksi.
 
 ```bash
 curl -V
