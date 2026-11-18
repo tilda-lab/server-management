@@ -22,6 +22,13 @@ Näiden testien lisäksi kokeilin avata asennussivua virtuaalikoneen ulkopuolell
 
 <img width="947" height="468" alt="2026-11-18 at 7 01 16" src="https://github.com/user-attachments/assets/adcfebaf-639f-4f0c-ae47-edf6d6fb56ba" />
 
+`07:04`Asetusten muuttamisen jälkeen verkkosivu toimi odotetusti ja asennus suoritettu onnistuneesti.
+
+<img width="1226" height="669" alt="2026-11-18 at 7 04 31" src="https://github.com/user-attachments/assets/b316dcfc-92ee-4849-91e7-79982b6e1cce" />
+
+#
+
+
 
 
 
