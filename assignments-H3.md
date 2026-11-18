@@ -36,15 +36,16 @@ b) Moottorix. Nginx asennus.
 
 Varmistin alkuun päivitykset ja tämän jälkeen asensin Nginx -paketin komennolla `sudo apt install nginx` 
 
-<img width="959" height="353" alt="2026-11-18 at 7 58 13" src="https://github.com/user-attachments/assets/0b3c8867-1b30-4628-9705-21338d4b3a0c" />
+<img width="959" height="353" alt="2026-11-18 at 7 58 13" src="https://github.com/user-attachments/assets/b54ec933-0956-4f3c-9497-e4761fb4128d" />
 
-Testasin komennolla `sudo systemctl status nginx` ja sain ilmoitukse.
+Tarkistin Apachen tilan ja sammutin ohjelman komennolla `sudo systemctl stop apache2` ja testasin Nginxin suorittamalla `sudo systemctl status nginx` Asennus oli oli onnistunut, mutta ohjelma ei ollut käynnistynyt. 
 
-<img width="1260" height="436" alt="2026-11-18 at 8 00 36" src="https://github.com/user-attachments/assets/626654ba-ed6f-4aa0-a7d1-7fa3f0e25668" />
+<img width="1153" height="605" alt="2026-11-18 at 8 11 39" src="https://github.com/user-attachments/assets/430725a1-b989-4ec0-8cca-5624e00e48b8" />
 
+Suoritin komennon `sudo systemctl start nginx` ja tarkistin ohjelman tilan. Sain ilmoituksen "Active (running)"
 
+<img width="1168" height="405" alt="2026-11-18 at 8 19 23" src="https://github.com/user-attachments/assets/ac19da83-f74b-4442-a6a9-9701dfd0b109" />
 
-<img width="1153" height="605" alt="2026-11-18 at 8 11 39" src="https://github.com/user-attachments/assets/c38dfb06-b9fe-4b69-9f2a-792761147388" />
 
 
 
