@@ -21,8 +21,13 @@ Ansible Community Documentation: Handlers: running operations on change. https:/
 - dokumentaatiosta löytyy lisäksi käyttöesimerkit
 
 
-### y)
+### y) Hacker News. Dutch governments builds alternative for Microsoft based on NixOS
+  
+https://news.ycombinator.com/item?id=49841563
+https://www.dawo.community/en/
 
+- Hollannissa kehitetään julkishallinnolle vaihtoehtoista työympäristöä. Tarkoituksena irroittautua Microsoftista.
+- Pohjautuu Linuxin NixOs joka mahdollistaa keskitetyn hallinnan
 
 
 ### a) Apassi. Apache 2 asennus.
