@@ -46,6 +46,16 @@ Suoritin komennon `sudo systemctl start nginx` ja tarkistin ohjelman tilan. Sain
 
 <img width="1168" height="405" alt="2026-11-18 at 8 19 23" src="https://github.com/user-attachments/assets/ac19da83-f74b-4442-a6a9-9701dfd0b109" />
 
+Nginxin testaukseen soveltuvat samat komennot mitä käytin Apachen kohdalla.
+
+```bash
+sudo systemctl status # kertoo ohjelman tilan
+curl -I http://localhost # hakee ja tulostaa terminaaliin verkkosivun otsaketiedot
+```
+
+<img width="907" height="205" alt="2026-11-18 at 8 54 37" src="https://github.com/user-attachments/assets/fd1a101d-b533-483e-adfd-0b22ab99ae27" />
+
+
 #
 
 c) Automoottorix. Nginxin asennuksen automatisointi Ansiblella.
