@@ -29,6 +29,7 @@ https://www.dawo.community/en/
 - Hollannissa kehitetään julkishallinnolle vaihtoehtoista työympäristöä. Tarkoituksena irroittautua Microsoftista.
 - Pohjautuu Linuxin NixOs joka mahdollistaa keskitetyn hallinnan
 
+#
 
 ### a) Apassi. Apache 2 asennus.
 
