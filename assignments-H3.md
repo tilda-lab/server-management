@@ -46,8 +46,11 @@ Suoritin komennon `sudo systemctl start nginx` ja tarkistin ohjelman tilan. Sain
 
 <img width="1168" height="405" alt="2026-11-18 at 8 19 23" src="https://github.com/user-attachments/assets/ac19da83-f74b-4442-a6a9-9701dfd0b109" />
 
+#
 
+c) Automoottorix. Nginxin asennuksen automatisointi Ansiblella.
 
+2026-11-18 start  / MacBook Pro (Apple M3 Pro) / macOS Tahoe version 26.6.1
 
 #
 
@@ -57,4 +60,6 @@ Tero Karvinen. Apache installed with Ansible - quick notes. Luettavissa: https:/
 
 Ansible Community Documentation. Luettavissa:
 https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_handlers.html Luettu 18.11.2026
+
+Nginx. Beginner's guide. Luettavissa: https://nginx.org/en/docs/beginners_guide.html Luettu: 18.11.2026
 
