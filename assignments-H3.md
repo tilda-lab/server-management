@@ -1,10 +1,10 @@
-x)
+### x)
 
 
 
 
 
-a) Apassi. Apache 2 asennus.
+### a) Apassi. Apache 2 asennus.
 
 2026-11-18 start 6:48 / MacBook Pro (Apple M3 Pro) / macOS Tahoe version 26.6.1
 
@@ -30,7 +30,7 @@ Näiden testien lisäksi kokeilin avata asennussivua virtuaalikoneen ulkopuolell
 
 #
 
-b) Moottorix. Nginx asennus.
+### b) Moottorix. Nginx asennus.
 
 2026-11-18 start 7:53 / MacBook Pro (Apple M3 Pro) / macOS Tahoe version 26.6.1
 
@@ -53,18 +53,62 @@ sudo systemctl status # kertoo ohjelman tilan
 curl -I http://localhost # hakee ja tulostaa terminaaliin verkkosivun otsaketiedot
 ```
 
+# 
+
+`08:54` Nginx asennettu ja toiminnassa.
+
 <img width="907" height="205" alt="2026-11-18 at 8 54 37" src="https://github.com/user-attachments/assets/fd1a101d-b533-483e-adfd-0b22ab99ae27" />
 
 
 #
 
-c) Automoottorix. Nginxin asennuksen automatisointi Ansiblella.
+### c) Automoottorix. Nginxin asennuksen automatisointi Ansiblella.
 
-2026-11-18 start  / MacBook Pro (Apple M3 Pro) / macOS Tahoe version 26.6.1
+2026-11-18 start 09:03 / MacBook Pro (Apple M3 Pro) / macOS Tahoe version 26.6.1
+
+Tein Nginxin automatisoinnille uuden hakemiston ja loin tarvittavat tiedostot.
+
+<img width="882" height="299" alt="2026-11-18 at 9 33 46" src="https://github.com/user-attachments/assets/b3ef79c2-d39e-43cb-aa69-33b82a205209" />
+
+<img width="880" height="261" alt="2026-11-18 at 9 39 15" src="https://github.com/user-attachments/assets/eb601ebb-313a-4402-90c7-96c18ac35171" />
+
+```yaml
+name: nginx # asennettava paketti
+state: present # varmistaa ohjelman asennuksen
+update_cache: true # päivittää paketin
+service # hallitsee palvelua
+state: started # käynnistää palvelun
+enabled: true # automaattinen käynnistys
+```
+<img width="733" height="196" alt="2026-11-18 at 9 41 07" src="https://github.com/user-attachments/assets/1af91344-04db-4c53-b226-f29872141e26" />
 
 #
 
-##### Lähteet:
+Playbookin testaus ja suorittaminen. Antoi varoituksen Pythonin versiosta ja lisäsin inventory.ini -tiedostoon `[all:vars]
+ansible_python_interpreter=/usr/bin/python3 `
+
+```yaml
+ansible-playbook -I inventory.ini site.yml -K
+```
+
+<img width="1166" height="376" alt="2026-11-18 at 9 46 08" src="https://github.com/user-attachments/assets/9c588abf-9583-4b6e-80cb-03dbcf55c284" />
+
+<img width="1171" height="462" alt="2026-11-18 at 9 48 59" src="https://github.com/user-attachments/assets/de9a4b94-9fc2-42a4-9efa-1e75fc719b31" />
+
+
+#
+
+`09:48` 
+
+Lopuksi tein vielä testin, sammutin Nginxin ja tämän jälkeen ajoin `ansible-playbook -I inventory.ini site.yml -K` Lokista voi havaita automaattisen käynnistyksen. Ohjelma siis toimii toivotusti.
+
+<img width="1161" height="404" alt="2026-11-18 at 10 13 33" src="https://github.com/user-attachments/assets/2d80b7dd-4a39-40ff-93ab-914ed8d261b4" />
+
+<img width="1160" height="323" alt="2026-11-18 at 10 13 50" src="https://github.com/user-attachments/assets/c6cda083-b78c-4de2-89ee-a97b973cd0c8" />
+
+#
+
+### Lähteet:
 
 Tero Karvinen. Apache installed with Ansible - quick notes. Luettavissa: https://terokarvinen.com/apache-ansible/ Luettu 18.11.2026
 
