@@ -1,6 +1,27 @@
-### x)
+### x) Lue ja tiivistä.
+
+Karvinen 2026: Apache installed with Ansible - quick notes. https://terokarvinen.com/apache-ansible/
+
+- Lyhyt ja tiivis muistiinpano Apachen asentamisesta
+- Sisältää hyödyllisiä esimerkkejä Ansiblella automatisoinnista sekä YAML-syntaksia
+- Tekstin alussakin korostetaan sen olevan muistiinpano. Se ei siis itsessään toimi asennuksen ohjeena vaan muistin tukena sellaiselle käyttäjälle joka tietää prosessin ennalta.
 
 
+Ansible Community Documentation: Handlers: running operations on change. https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_handlers.html
+
+- Handlers on Ansiblen toiminto joka käynnistyy ainoastaan pyydettäessä tai tiettyjen ehtojen täyttyessä
+
+'ansible-doc service'
+
+- komento tulostaa service-moduulin dokumentaation
+- MODULE on johdantokappale joka sisältää perustiedot
+- enabled allitsee käynnistymistä
+- name sisältää nimitiedot
+- state määrittää tilan, eli käytettyjä arvoja ovat mm. start, stop, restrat
+- dokumentaatiosta löytyy lisäksi käyttöesimerkit
+
+
+### y)
 
 
 
