@@ -24,7 +24,9 @@ Näiden testien lisäksi kokeilin avata asennussivua virtuaalikoneen ulkopuolell
 
 #
 
-`07:04`Asetusten muuttamisen jälkeen verkkosivu toimi odotetusti ja asennus suoritettu onnistuneesti.
+`07:04`
+
+Asetusten muuttamisen jälkeen verkkosivu toimi odotetusti ja asennus suoritettu onnistuneesti.
 
 <img width="1226" height="669" alt="2026-11-18 at 7 04 31" src="https://github.com/user-attachments/assets/b316dcfc-92ee-4849-91e7-79982b6e1cce" />
 
@@ -55,7 +57,9 @@ curl -I http://localhost # hakee ja tulostaa terminaaliin verkkosivun otsaketied
 
 # 
 
-`08:54` Nginx asennettu ja toiminnassa.
+`08:54` 
+
+Nginx asennettu ja toiminnassa.
 
 <img width="907" height="205" alt="2026-11-18 at 8 54 37" src="https://github.com/user-attachments/assets/fd1a101d-b533-483e-adfd-0b22ab99ae27" />
 
@@ -84,12 +88,12 @@ enabled: true # automaattinen käynnistys
 
 #
 
-Playbookin testaus ja suorittaminen. Antoi varoituksen Pythonin versiosta ja lisäsin inventory.ini -tiedostoon `[all:vars]
-ansible_python_interpreter=/usr/bin/python3 `
-
 ```yaml
 ansible-playbook -I inventory.ini site.yml -K
 ```
+
+Playbookin testaus ja suorittaminen. Antoi varoituksen Pythonin versiosta ja lisäsin inventory.ini -tiedostoon `[all:vars]
+ansible_python_interpreter=/usr/bin/python3 `
 
 <img width="1166" height="376" alt="2026-11-18 at 9 46 08" src="https://github.com/user-attachments/assets/9c588abf-9583-4b6e-80cb-03dbcf55c284" />
 
