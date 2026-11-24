@@ -22,6 +22,19 @@ Yritin asennusta komennolla `sudo apt install syslogd` ja tämä ei toiminut. An
 
 ### b) Automaatti. Daemonin automatisointi Ansiblella.
 
+2026-11-24 start 23:15 / MacBook Pro (Apple M3 Pro) / macOS Tahoe version 26.6.1
+
+<img width="1338" height="354" alt="2026-11-24 at 23 15 58" src="https://github.com/user-attachments/assets/af9fff1e-c031-46bc-ba2a-076d79b626ed" />
+
+<img width="1984" height="614" alt="2026-11-24 at 23 16 14" src="https://github.com/user-attachments/assets/86ad7260-3128-4e23-b15f-acb370152ee2" />
+
+<img width="2014" height="872" alt="2026-11-24 at 23 32 08" src="https://github.com/user-attachments/assets/2cd78993-fefb-4096-9565-ed38f5d0f016" />
+
+
+
+
+
+
 
 
 #
