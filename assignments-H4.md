@@ -1,4 +1,12 @@
 #
+### x) Karvinen 2023: Configuration Management of Distributed Systems over Unreliable and Hostile Networks (pdf, ̣mirrors: local, archive.org), vain nämä kohdat:
+	▪	4.12.1 Size and Complexity of Some DSLs (112. Ominaisuuksien määrä.)
+	▪	4.12.2 Use of DSL Functions in Case Configuration (112-115. Mitä oikeasti käytetään.)
+	▪	4.12.3.1 Dependencies Between Main Functions (115-117. Tärkeimmät rakennuspalikat.)
+
+  - Tekstissä käsitellään modernia konfigurointia
+  - Idempotentti eli saman toiminnon voi suorittaa useita kertoja ja lopputulos pysyy aina samana.
+    
 
 ### a) Räpylä. Daemonin asennus.
 
@@ -23,6 +31,8 @@ Yritin asennusta komennolla `sudo apt install syslogd` ja tämä ei toiminut. An
 ### b) Automaatti. Daemonin automatisointi Ansiblella.
 
 2026-11-24 start 23:15 / MacBook Pro (Apple M3 Pro) / macOS Tahoe version 26.6.1
+
+Pieniä teknisiä haasteita. Tehtävä jäi jumiin ja palaan tämän osion raportointiin. 
 
 <img width="1338" height="354" alt="2026-11-24 at 23 15 58" src="https://github.com/user-attachments/assets/af9fff1e-c031-46bc-ba2a-076d79b626ed" />
 
