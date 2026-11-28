@@ -70,7 +70,13 @@ Tarkistin vielä asennetun ohjelmistopaketin tiedot paketinhallintatyökalulla. 
 
 #
 
-`11:39` Tarkistin Ansible-roolin nykyisen sisällön `cat roles/syslog/tasks/main.yml` komennolla. Tämän avulla näin mitä tehtäviä rooli sisälsi ja miten asennus oli määritelty.Huomasin YAML-tiedostossa virheellisen ohjelmistopaketin (rsyslog). Koska olin asentanut Inetutilsin syslog-daemonin, korjasin tiedoston vastaamaan oikeaa ohjekmistopakettia. `nano roles/syslog/tasks/main.yml`
+`11:39` Tarkistin Ansible-roolin nykyisen sisällön ja varmistin mitä tehtäviä rooli sisälsi sekä miten asennus oli määritelty. Tässä yhteydessä huomasin YAML-tiedostossa virheellisen ohjelmistopaketin (rsyslog). Koska olin asentanut Inetutilsin syslog-daemonin, korjasin tiedoston vastaamaan oikeaa ohjekmistopakettia. 
+
+```Bash
+cat roles/syslog/tasks/main.yml
+nano roles/syslog/tasks/main.yml
+```
+
 
 <img width="1220" height="194" alt="2026-11-28 at 11 39 19" src="https://github.com/user-attachments/assets/b3bc7643-34df-4ba1-9ada-67f279f7cb94" />
 
@@ -84,7 +90,12 @@ Tarkistin vielä asennetun ohjelmistopaketin tiedot paketinhallintatyökalulla. 
 
 c) Asetus. Asetustiedoston muutokset
 
-`12:14` Käytin komentoa `dpkg -L inetutils-syslogd | grep -E 'conf|syslog'`. tämä listasi paketin asentamat tiedostot ja suodatti näkyviin syslogiin tai asetuksiin liittyvät polut. Listasta löysin syslog.conf -tiedoston ja hain sen sisällön `cat /etc/syslog.cof`komennolla.
+`12:14` Listasin paketin asentamat tiedostot ja suodatin syslogiin tai asetuksiin liittyvät polut. Listasta löysin syslog.conf -tiedoston.
+
+```Bash
+dpkg -L inetutils-syslogd | grep -E 'conf|syslog'
+cat /etc/syslog.cof
+```
 
 <img width="1202" height="352" alt="2026-11-28 at 12 14 58" src="https://github.com/user-attachments/assets/3a7213ad-a140-4f9c-8070-ee5f98ccc6ec" />
 
@@ -93,6 +104,28 @@ c) Asetus. Asetustiedoston muutokset
 `13:14` Muokkasin syslogin asetustiedostoa ja tavoitteeni oli ohjata tietyt lokitiedot omaan lokitiedostoonsa. Ennen muutosten tekemistä kopioin alkuperäisen asetustiedoston Ansible-roolin files hakemistoon komennolla `cp /etc/syslog.conf roles/syslog/files/syslog.conf` Varmistin kopioinnin onnistumisen komennolla `ls -l roles/syslog/files` 
 
 <img width="1211" height="81" alt="2026-11-28 at 13 17 33" src="https://github.com/user-attachments/assets/47174a74-9802-4a5e-8277-8e9d52d429c6" />
+
+#
+
+`14:39` Loin syslog-roolia varten oman handlers-hakemiston ja loin uuden tiedoston. Määrittelin sen käynnistämään syslog-palvelun uudelleen aina kun Ansible havaitsee asetustiedostossa muutoksia. 
+
+```Bash
+mkdir roles/syslog/handlers # loi uuden hakemiston
+nano roles/syslog/handlers/main.yml # tiedoston luominen ja muokkaaminen
+cat roles/syslog/handlers/main.yml # tulosti tiedoston sisällön terminaaliin
+```
+
+<img width="1251" height="295" alt="2026-11-28 at 14 39 45" src="https://github.com/user-attachments/assets/4c57a68a-6061-4785-88f9-1a2c39c469f2" />
+
+Tarkistin playbookin syntaksin mahdollisten virheiden varalta komennolla `ansible-playbook site.yml --syntax-check` Komento palautti virheilmoituksen, joka osoitti virheen tarkan sijainnin. Virheen aiheutti puuttunut välilyönti. Korjasin syntaksivirheen ja suoritin tarkistuksen uudelleen. Tämän jälkeen playbook toimi odotetusti.
+
+<img width="1115" height="253" alt="2026-11-28 at 14 42 17" src="https://github.com/user-attachments/assets/4a083b47-559b-4624-af3f-5a4dff06f842" />
+
+```Bash
+ansible-playbook site.yml -K
+```
+
+<img width="1242" height="428" alt="2026-11-28 at 14 43 20" src="https://github.com/user-attachments/assets/cd23b146-501d-43fe-814c-8a699c557568" />
 
 
 
