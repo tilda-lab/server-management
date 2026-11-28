@@ -90,6 +90,12 @@ c) Asetus. Asetustiedoston muutokset
 
 <img width="1231" height="325" alt="2026-11-28 at 12 29 57" src="https://github.com/user-attachments/assets/816800ae-01a0-4085-b9df-7bc0a634027d" />
 
+`13:14` Muokkasin syslogin asetustiedostoa ja tavoitteeni oli ohjata tietyt lokitiedot omaan lokitiedostoonsa. Ennen muutosten tekemistä kopioin alkuperäisen asetustiedoston Ansible-roolin files hakemistoon komennolla `cp /etc/syslog.conf roles/syslog/files/syslog.conf` Varmistin kopioinnin onnistumisen komennolla `ls -l roles/syslog/files` 
+
+<img width="1211" height="81" alt="2026-11-28 at 13 17 33" src="https://github.com/user-attachments/assets/47174a74-9802-4a5e-8277-8e9d52d429c6" />
+
+
+
 #
 
 Tehtävissä käytin OpenAI:n ChatGPT-tekoälyä apuna teknisten käsitteiden selventämiseen sekä Ansible-konfiguraatioiden ja syslog-daemonin toiminnan ymmärtämiseen. Työn toteutus, komentojen suorittaminen ja tulosten todentaminen on tehty itse.
