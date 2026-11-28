@@ -53,8 +53,9 @@ Free Code Camp. The Syslog Handbook – How to Collect and Redirect Logs to a Re
 Rsyslog. https://www.rsyslog.com Luettu 24.11.2026
 
 #
+#
 
-edit. 2026-11-28 start 10:55 / MacBook Pro (Apple M3 Pro) / macOS Tahoe version 26.6.1
+### edit. 2026-11-28 start 10:55 / MacBook Pro (Apple M3 Pro) / macOS Tahoe version 26.6.1
 
 a) Räpylä. Daemonin asennus & b) Automaatti. Daemonin automatisointi
 
@@ -127,11 +128,51 @@ ansible-playbook site.yml -K
 
 <img width="1242" height="428" alt="2026-11-28 at 14 43 20" src="https://github.com/user-attachments/assets/cd23b146-501d-43fe-814c-8a699c557568" />
 
+#
+
+`14:14` Testasin vielä lopuksi asetusten toimivuutta lähettämällä syslogille testiviestin "Ansible sysloggg test" ja tarkistin viestin tallentumisen. Testiviesti löytyi tiedostosta, joten lokiviestien ohjaus omaan tiedostoon toimi.
+
+```Bash
+grep local0 /etc/syslog.conf # etsi hakusanalla local0 
+logger -p local0.info "Ansible sysloggg test" # lähetti lokiviestin syslog-järyestelmään
+cat /var/log/local0.log # tulosti tiedoston sisällön terminaaliin
+```
+
+<img width="1172" height="101" alt="2026-11-28 at 15 14 45" src="https://github.com/user-attachments/assets/7c318e24-b1fe-43dd-bcdf-05e98504fdac" />
+
+#
+
+d) Paikka remonttiin. Asetusten rikkominen
+
+`15:25` Testasin ansiblen toimivuuden ja kyvyn korjata virheellisiä asetuksia poistamalla järjestelmän alkuperäisen syslog-asetustiedoston. Varmistin sen poistamisen listaamalla kansion sisällön ja tämän jälkeen suoritin playbookin. Ansible havaitsi asetustiedoston puuttumisen ja kopioi sen takaisin järjestelmään projektin files-hakemistossa olevasta tiedostosta. Varmistin vielä korjauksen onnistumisen suorittamlla  `ls /etc/syslog.conf` komennon uudelleen. Tiedosto oli palautunut onnistuneesti.
+
+```Bash
+sudo rm /etc/syslog.conf # komento poisti alkuperäisen syslog.conf -asetustiedoston
+ls /etc/syslog.conf 
+ansible-playbook site.yml -K
+ls /etc/syslog.conf 
+```
+
+ <img width="1191" height="556" alt="2026-11-28 at 15 35 09" src="https://github.com/user-attachments/assets/b1fa4a8d-12bd-4c3a-b8ff-0237de961092" />
+
+#
+
+e) Idempotentti
+
+`15:36` Suoritin playbookin uudelleen. Suorituksen tuloksena muutoksia ei tapahtunut (changed=0) Tämä osoitti, ettei Ansible tehnyt tarpeettomia muutoksia, koska järjestelmä oli jo halutussa tilassa. Näin ollen toteutettu konfigurointi oli idempotentti.
+
+```Bash
+ansible-playbook site.yml -K
+```
+
+<img width="1233" height="374" alt="2026-11-28 at 15 36 46" src="https://github.com/user-attachments/assets/fa479935-2d1c-43bc-93c4-90204d00cdb8" />
+
+
 
 
 #
 
-Tehtävissä käytin OpenAI:n ChatGPT-tekoälyä apuna teknisten käsitteiden selventämiseen sekä Ansible-konfiguraatioiden ja syslog-daemonin toiminnan ymmärtämiseen. Työn toteutus, komentojen suorittaminen ja tulosten todentaminen on tehty itse.
+Tehtävissä käytin OpenAI:n ChatGPT-tekoälyä teknisten käsitteiden selventämiseen sekä Ansible-konfiguraatioiden ja syslog-daemonin toiminnan ymmärtämiseen. Lisäksi käytin tekoälyä kielenhuoltoon. Työn toteutus, komentojen suorittaminen ja tulosten todentaminen on tehty itse.
 
 #
 
