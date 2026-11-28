@@ -58,7 +58,7 @@ edit. 2026-11-28 start 10:55 / MacBook Pro (Apple M3 Pro) / macOS Tahoe version 
 
 a) Räpylä. Daemonin asennus & b) Automaatti. Daemonin automatisointi
 
-Ensimmäisenä tarkistin asentamani syslog-daemonin tilan komennolla `systemctl status rsyslog` ja tämä palautti ilmoituksen "Unit rsyslog.service could not be found" Kokeilin seuraavaksi `systemctl status syslog`, joka osoitti palvelun olevan aktiivinen (active). Tämän perusteella totesin asentaneeni rsyslogin sijaan toisen syslog-toteutuksen. Kyseessä on Inetutils-ohjelmistokokoelmaan kuuluva syslog-daemon.
+`11:07` Ensimmäisenä tarkistin asentamani syslog-daemonin tilan komennolla `systemctl status rsyslog` ja tämä palautti ilmoituksen "Unit rsyslog.service could not be found" Kokeilin seuraavaksi `systemctl status syslog`, joka osoitti palvelun olevan aktiivinen (active). Tämän perusteella totesin asentaneeni rsyslogin sijaan toisen syslog-toteutuksen. Kyseessä on Inetutils-ohjelmistokokoelmaan kuuluva syslog-daemon.
 
 <img width="1159" height="325" alt="2026-11-28 at 11 07 35" src="https://github.com/user-attachments/assets/858f3602-8f63-4ec4-97f3-15372af2a138" />
 
@@ -80,8 +80,23 @@ Tarkistin vielä asennetun ohjelmistopaketin tiedot paketinhallintatyökalulla. 
 
 <img width="1259" height="533" alt="2026-11-28 at 11 59 13" src="https://github.com/user-attachments/assets/842f78d2-6006-499b-b420-87395a63e778" />
 
+#
 
+c) Asetus. Asetustiedoston muutokset
 
+`12:14` Käytin komentoa `dpkg -L inetutils-syslogd | grep -E 'conf|syslog'`. tämä listasi paketin asentamat tiedostot ja suodatti näkyviin syslogiin tai asetuksiin liittyvät polut. Listasta löysin syslog.conf -tiedoston ja hain sen sisällön `cat /etc/syslog.cof`komennolla.
 
+<img width="1202" height="352" alt="2026-11-28 at 12 14 58" src="https://github.com/user-attachments/assets/3a7213ad-a140-4f9c-8070-ee5f98ccc6ec" />
 
+<img width="1231" height="325" alt="2026-11-28 at 12 29 57" src="https://github.com/user-attachments/assets/816800ae-01a0-4085-b9df-7bc0a634027d" />
+
+#
+
+Tehtävissä käytin OpenAI:n ChatGPT-tekoälyä apuna teknisten käsitteiden selventämiseen sekä Ansible-konfiguraatioiden ja syslog-daemonin toiminnan ymmärtämiseen. Työn toteutus, komentojen suorittaminen ja tulosten todentaminen on tehty itse.
+
+#
+
+Lähteet:
+
+Debian. Man-pages. Syslogd. Luettavissa: https://manpages.debian.org/testing/inetutils-syslogd/syslogd.8.en.html Luettu 28.11.2026
 
