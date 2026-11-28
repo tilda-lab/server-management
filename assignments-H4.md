@@ -56,7 +56,9 @@ Rsyslog. https://www.rsyslog.com Luettu 24.11.2026
 
 edit. 2026-11-28 start 10:55 / MacBook Pro (Apple M3 Pro) / macOS Tahoe version 26.6.1
 
-a) Ensimmäisenä tarkistin asentamani syslog-daemonin tilan komennolla `systemctl status rsyslog` ja tämä palautti ilmoituksen "Unit rsyslog.service could not be found" Kokeilin seuraavaksi `systemctl status syslog`, joka osoitti palvelun olevan aktiivinen (active). Tämän perusteella totesin asentaneeni rsyslogin sijaan toisen syslog-toteutuksen. Kyseessä on Inetutils-ohjelmistokokoelmaan kuuluva syslog-daemon.
+a) Räpylä. Daemonin asennus & b) Automaatti. Daemonin automatisointi
+
+Ensimmäisenä tarkistin asentamani syslog-daemonin tilan komennolla `systemctl status rsyslog` ja tämä palautti ilmoituksen "Unit rsyslog.service could not be found" Kokeilin seuraavaksi `systemctl status syslog`, joka osoitti palvelun olevan aktiivinen (active). Tämän perusteella totesin asentaneeni rsyslogin sijaan toisen syslog-toteutuksen. Kyseessä on Inetutils-ohjelmistokokoelmaan kuuluva syslog-daemon.
 
 <img width="1159" height="325" alt="2026-11-28 at 11 07 35" src="https://github.com/user-attachments/assets/858f3602-8f63-4ec4-97f3-15372af2a138" />
 
@@ -65,3 +67,21 @@ a) Ensimmäisenä tarkistin asentamani syslog-daemonin tilan komennolla `systemc
 Tarkistin vielä asennetun ohjelmistopaketin tiedot paketinhallintatyökalulla. Käytin komentoa `dpkg -l | grep inetutils`, joka listaa annettuun hakusanaan liittyvät paketit.
 
 <img width="1229" height="63" alt="2026-11-28 at 11 17 08" src="https://github.com/user-attachments/assets/ca73ae73-c66e-4c5e-ba47-231266373a2c" />
+
+#
+
+`11:39` Tarkistin Ansible-roolin nykyisen sisällön `cat roles/syslog/tasks/main.yml` komennolla. Tämän avulla näin mitä tehtäviä rooli sisälsi ja miten asennus oli määritelty.Huomasin YAML-tiedostossa virheellisen ohjelmistopaketin (rsyslog). Koska olin asentanut Inetutilsin syslog-daemonin, korjasin tiedoston vastaamaan oikeaa ohjekmistopakettia. `nano roles/syslog/tasks/main.yml`
+
+<img width="1220" height="194" alt="2026-11-28 at 11 39 19" src="https://github.com/user-attachments/assets/b3bc7643-34df-4ba1-9ada-67f279f7cb94" />
+
+#
+
+`11:59` Ajoin Ansible-playbookin komennolla `ansible-playbook site.yml` Suoritus epäonnistui, koska Ansible ei saanut tarvittavia sudo-oikeuksia. Lisäsin parametrin -K, joka pyytää käyttäjän salasanan. Tämän jälkeen playbook suoritettiin onnistuneesti.
+
+<img width="1259" height="533" alt="2026-11-28 at 11 59 13" src="https://github.com/user-attachments/assets/842f78d2-6006-499b-b420-87395a63e778" />
+
+
+
+
+
+
